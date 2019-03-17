@@ -430,8 +430,8 @@ function handleValueSwap() {
 
 function handleEditStart() {
     const value = $(this).text();
-    //const type = $(this).attr("class").replace(classesRegex, "");
-    //$(this).html('<input ' + ((type === "permission") ? 'class="autocomp" ' : '') + '>');
+    const type = $(this).attr("class").replace(classesRegex, "");
+    $(this).html('<input ' + ((type === "permission") ? 'class="autocomp" ' : '') + '>');
     $(this).html('<input>');
 
     const input = $(this).find("input");
